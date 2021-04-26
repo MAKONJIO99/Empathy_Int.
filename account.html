@@ -15,126 +15,151 @@
 </head>
 
 <body>
-    <div class="container">
-        <h3>Account page</h3>
-        <a href="#"><img src="./account_images/arrow-left.svg" alt="back"></a>
-        <p>Welcome,</p>
-        <p>Kindly, tell us who you are;</p>
-        <form  id="myform">
-            <div class="form-check">
-                <label for="sponsor">Sponsor</label>
-                <input type="radio" class="form-check-input" name="person" id="sponsor1" value="Sponsor">
-            </div>
-            <div class="form-check">
-                <label for="benef">Beneficiary</label>
-                <input type="radio" class="form-check-input" name="person" id="sponsor2" value="Beneficiary">
-            </div>
-            <button type="submit" class="btn bg-secondary">Confirm</button>
-
-        </form>
-        User is:<p id="user1" class="user2"></p>
-        <p>sign up here</p>
-
-        <div class="card form1">
-            <form id="bform"> 
-                <h2>Sign up here</h2>
-                <input type="text" class="form-control" id="firstname">
-                <input type="text" class="form-control" id="lastname">
-                <input type="text" class="form-control" id="country">
-                <input type="number" class="form-control" id="phone">
-                <label class="form-control-label">Select gender</label>
+    <div class="container ">
+        <div class="wrappper text-white" style="margin-left: 20px;">
+            <h3>Account page</h3>
+            <a href="#"><img src="./account_images/arrow-left.svg" alt="back"></a>
+            <p>Welcome,</p>
+            <p>Kindly, tell us who you are;</p>
+            <form id="myform">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" value="male" id="male" name="gender">
-                    <label class="form-check-label">
-                      Male
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" value="female" id="female" name="gender">
-                    <label class="form-check-label">
-                     Female
-                    </label>
-                  </div>
-                  <select name="country" class="form-control" id="country">
-                    <option value="0" label="Select a country -- " selected="selected">Select a country ... </option>
-                    <optgroup id="country-optgroup-Africa" label="Africa">
-                        <option value="DZ" label="Algeria">Algeria</option>
-                        <option value="AO" label="Angola">Angola</option>
-                        <option value="BJ" label="Benin">Benin</option>
-                        <option value="BW" label="Botswana">Botswana</option>
-                        <option value="BF" label="Burkina Faso">Burkina Faso</option>
-                        <option value="BI" label="Burundi">Burundi</option>
-                        <option value="CM" label="Cameroon">Cameroon</option>
-                        <option value="CV" label="Cape Verde">Cape Verde</option>
-                        <option value="CF" label="Central African Republic">Central African Republic</option>
-                        <option value="TD" label="Chad">Chad</option>
-                        <option value="KM" label="Comoros">Comoros</option>
-                        <option value="CG" label="Congo - Brazzaville">Congo - Brazzaville</option>
-                        <option value="CD" label="Congo - Kinshasa">Congo - Kinshasa</option>
-                        <option value="CI" label="Côte d’Ivoire">Côte d’Ivoire</option>
-                        <option value="DJ" label="Djibouti">Djibouti</option>
-                        <option value="EG" label="Egypt">Egypt</option>
-                        <option value="GQ" label="Equatorial Guinea">Equatorial Guinea</option>
-                        <option value="ER" label="Eritrea">Eritrea</option>
-                        <option value="ET" label="Ethiopia">Ethiopia</option>
-                        <option value="GA" label="Gabon">Gabon</option>
-                        <option value="GM" label="Gambia">Gambia</option>
-                        <option value="GH" label="Ghana">Ghana</option>
-                        <option value="GN" label="Guinea">Guinea</option>
-                        <option value="GW" label="Guinea-Bissau">Guinea-Bissau</option>
-                        <option value="KE" label="Kenya">Kenya</option>
-                        <option value="LS" label="Lesotho">Lesotho</option>
-                        <option value="LR" label="Liberia">Liberia</option>
-                        <option value="LY" label="Libya">Libya</option>
-                        <option value="MG" label="Madagascar">Madagascar</option>
-                        <option value="MW" label="Malawi">Malawi</option>
-                        <option value="ML" label="Mali">Mali</option>
-                        <option value="MR" label="Mauritania">Mauritania</option>
-                        <option value="MU" label="Mauritius">Mauritius</option>
-                        <option value="YT" label="Mayotte">Mayotte</option>
-                        <option value="MA" label="Morocco">Morocco</option>
-                        <option value="MZ" label="Mozambique">Mozambique</option>
-                        <option value="NA" label="Namibia">Namibia</option>
-                        <option value="NE" label="Niger">Niger</option>
-                        <option value="NG" label="Nigeria">Nigeria</option>
-                        <option value="RW" label="Rwanda">Rwanda</option>
-                        <option value="RE" label="Réunion">Réunion</option>
-                        <option value="SH" label="Saint Helena">Saint Helena</option>
-                        <option value="SN" label="Senegal">Senegal</option>
-                        <option value="SC" label="Seychelles">Seychelles</option>
-                        <option value="SL" label="Sierra Leone">Sierra Leone</option>
-                        <option value="SO" label="Somalia">Somalia</option>
-                        <option value="ZA" label="South Africa">South Africa</option>
-                        <option value="SD" label="Sudan">Sudan</option>
-                        <option value="SZ" label="Swaziland">Swaziland</option>
-                        <option value="ST" label="São Tomé and Príncipe">São Tomé and Príncipe</option>
-                        <option value="TZ" label="Tanzania">Tanzania</option>
-                        <option value="TG" label="Togo">Togo</option>
-                        <option value="TN" label="Tunisia">Tunisia</option>
-                        <option value="UG" label="Uganda">Uganda</option>
-                        <option value="EH" label="Western Sahara">Western Sahara</option>
-                        <option value="ZM" label="Zambia">Zambia</option>
-                        <option value="ZW" label="Zimbabwe">Zimbabwe</option>
-                    </optgroup>
-                  </select>
-            </form>
-        </div>
-        <br>
-        <div class="card">
-            <form id="sform">
-                <h2>Sign up here</h2>
-                <input type="text" class="form-control" id="firstname" placeholder="firstname">
-                <input type="text" class="form-control" id="lastname" placeholder="lastname">
-                <input type="email" class="form-control" id="email" placeholder="email">
-                <input type="number" class="form-control" id="phone" placeholder="phone">
-                <input type="password" class="form-control" id="password" placeholder="password">
-                
-    
-            </form>
-    
-    
-        </div>
+                    <label for="sponsor">Sponsor</label>
+                    <input type="radio" class="form-check-input" name="person" id="sponsor1" value="Sponsor">
+                </div>
+                <div class="form-check">
+                    <label for="benef">Beneficiary</label>
+                    <input type="radio" class="form-check-input" name="person" id="sponsor2" value="Beneficiary">
+                </div>
+                <button type="submit" class="btn bg-secondary">Confirm</button>
 
+            </form>
+            User is:<p id="user1" class="user2"></p>
+
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="form1">
+                        <form id="bform">
+                            <h2> Sign up here</h2>
+                            <input type="text" class="form-control" id="firstname" placeholder="firstname">
+                            <input type="text" class="form-control" id="lastname" placeholder="lastname">
+                            <input type="text" class="form-control" id="country" placeholder="country">
+                            <input type="number" class="form-control" id="phone" placeholder="Phone">
+                            <label class="form-control-label">Select gender</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="male" id="male" name="gender">
+                                <label class="form-check-label">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="female" id="female" name="gender">
+                                <label class="form-check-label">
+                                    Female
+                                </label>
+                            </div>
+                            <select name="country" class="form-control" id="country">
+                                <option value="0" label="Select a country -- " selected="selected">Select a country ...
+                                </option>
+                                <optgroup id="country-optgroup-Africa" label="Africa">
+                                    <option value="DZ" label="Algeria">Algeria</option>
+                                    <option value="AO" label="Angola">Angola</option>
+                                    <option value="BJ" label="Benin">Benin</option>
+                                    <option value="BW" label="Botswana">Botswana</option>
+                                    <option value="BF" label="Burkina Faso">Burkina Faso</option>
+                                    <option value="BI" label="Burundi">Burundi</option>
+                                    <option value="CM" label="Cameroon">Cameroon</option>
+                                    <option value="CV" label="Cape Verde">Cape Verde</option>
+                                    <option value="CF" label="Central African Republic">Central African Republic
+                                    </option>
+                                    <option value="TD" label="Chad">Chad</option>
+                                    <option value="KM" label="Comoros">Comoros</option>
+                                    <option value="CG" label="Congo - Brazzaville">Congo - Brazzaville</option>
+                                    <option value="CD" label="Congo - Kinshasa">Congo - Kinshasa</option>
+                                    <option value="CI" label="Côte d’Ivoire">Côte d’Ivoire</option>
+                                    <option value="DJ" label="Djibouti">Djibouti</option>
+                                    <option value="EG" label="Egypt">Egypt</option>
+                                    <option value="GQ" label="Equatorial Guinea">Equatorial Guinea</option>
+                                    <option value="ER" label="Eritrea">Eritrea</option>
+                                    <option value="ET" label="Ethiopia">Ethiopia</option>
+                                    <option value="GA" label="Gabon">Gabon</option>
+                                    <option value="GM" label="Gambia">Gambia</option>
+                                    <option value="GH" label="Ghana">Ghana</option>
+                                    <option value="GN" label="Guinea">Guinea</option>
+                                    <option value="GW" label="Guinea-Bissau">Guinea-Bissau</option>
+                                    <option value="KE" label="Kenya">Kenya</option>
+                                    <option value="LS" label="Lesotho">Lesotho</option>
+                                    <option value="LR" label="Liberia">Liberia</option>
+                                    <option value="LY" label="Libya">Libya</option>
+                                    <option value="MG" label="Madagascar">Madagascar</option>
+                                    <option value="MW" label="Malawi">Malawi</option>
+                                    <option value="ML" label="Mali">Mali</option>
+                                    <option value="MR" label="Mauritania">Mauritania</option>
+                                    <option value="MU" label="Mauritius">Mauritius</option>
+                                    <option value="YT" label="Mayotte">Mayotte</option>
+                                    <option value="MA" label="Morocco">Morocco</option>
+                                    <option value="MZ" label="Mozambique">Mozambique</option>
+                                    <option value="NA" label="Namibia">Namibia</option>
+                                    <option value="NE" label="Niger">Niger</option>
+                                    <option value="NG" label="Nigeria">Nigeria</option>
+                                    <option value="RW" label="Rwanda">Rwanda</option>
+                                    <option value="RE" label="Réunion">Réunion</option>
+                                    <option value="SH" label="Saint Helena">Saint Helena</option>
+                                    <option value="SN" label="Senegal">Senegal</option>
+                                    <option value="SC" label="Seychelles">Seychelles</option>
+                                    <option value="SL" label="Sierra Leone">Sierra Leone</option>
+                                    <option value="SO" label="Somalia">Somalia</option>
+                                    <option value="ZA" label="South Africa">South Africa</option>
+                                    <option value="SD" label="Sudan">Sudan</option>
+                                    <option value="SZ" label="Swaziland">Swaziland</option>
+                                    <option value="ST" label="São Tomé and Príncipe">São Tomé and Príncipe</option>
+                                    <option value="TZ" label="Tanzania">Tanzania</option>
+                                    <option value="TG" label="Togo">Togo</option>
+                                    <option value="TN" label="Tunisia">Tunisia</option>
+                                    <option value="UG" label="Uganda">Uganda</option>
+                                    <option value="EH" label="Western Sahara">Western Sahara</option>
+                                    <option value="ZM" label="Zambia">Zambia</option>
+                                    <option value="ZW" label="Zimbabwe">Zimbabwe</option>
+                                </optgroup>
+                            </select>
+                        </form>
+                    </div>
+                    <br>
+                    <div class="form2">
+                        <form id="sform">
+                            <h2>Sign up here</h2>
+                            <label for="firstname">Firstname:</label>
+                            <input type="text" class="form-control" id="firstname" placeholder="firstname">
+                            <label for="lastname">Lastname:</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="lastname">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="email">
+                            <label for="phone">Phone:</label>
+                            <input type="number" class="form-control" id="phone" placeholder="phone">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="password">
+                            <label for="confpswd">Confirm Password:</label>
+                            <input type="password" class="form-control" id="confirm" placeholder="confpswd">
+                            <button class="btn bg-warning" type="submit">Register</button>
+
+
+                        </form>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="card footer bg-primary text-white d-flex justify-content-center align-items-center">
+                <p>Emphathy International &#169 </p>
+
+
+            </div>
+
+
+
+
+
+        </div>
 
     </div>
     <script src="js/account.js"></script>

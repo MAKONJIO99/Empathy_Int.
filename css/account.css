@@ -1,3 +1,8 @@
+.container{
+    /* background-image: linear-gradient(rgb(3, 3, 95),grey); */
+    background-color: rgb(4, 4, 124);
+}
+
 .form1>#bform{
     display: none;
 

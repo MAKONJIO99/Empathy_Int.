@@ -9,12 +9,14 @@ $(document).ready(function () {
             $("p#user1").html(user).val();
             $(".card>#bform").hide();
         }else if(user=="Beneficiary"){
-            $(".card>#bform").show();
+            $("#bform").show();
             $(".user2").html(user).val();
             $("form#sform").hide();
             
         }else{
             alert("Select to proceed");
+            $("form#sform").hide();
+            $("#bform").hide();
 
         }
     })
@@ -24,7 +26,9 @@ $(document).ready(function () {
 
 
 $(document).ready(function(){
-    $("form#sform").submit(function(){
-        // $("#").;
+    $("form#sform").submit(function(event){
+        event.preventDefault();
+      
+        
     })
 })
