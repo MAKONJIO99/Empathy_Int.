@@ -20,25 +20,37 @@
         <a href="#"><img src="./account_images/arrow-left.svg" alt="back"></a>
         <p>Welcome,</p>
         <p>Kindly, tell us who you are;</p>
-        <div id="form">
+        <form  id="myform">
             <div class="form-check">
                 <label for="sponsor">Sponsor</label>
-                <input type="radio" class="form-check-input" name="person" id="sponsor1">
+                <input type="radio" class="form-check-input" name="person" id="sponsor1" value="Sponsor">
             </div>
             <div class="form-check">
                 <label for="benef">Beneficiary</label>
-                <input type="radio" class="form-check-input" name="person" id="sponsor2">
+                <input type="radio" class="form-check-input" name="person" id="sponsor2" value="Beneficiary">
             </div>
-            <button class="btn bg-secondary">Confirm</button>
+            <button type="submit" class="btn bg-secondary">Confirm</button>
 
-        </div>
+        </form>
+        User is:<p id="user1"></p>
+        <p>sign up here</p>
+
+        <form>
+            <input type="text" class="form-control" id="firstname">
+            <input type="text" class="form-control" id="lastname">
+            <input type="text" class="form-control" id="country">
+            <input type="number" class="form-control" id="phone">
+            
+
+
+
+        </form>
 
 
 
 
     </div>
-
-
+    <script src="js/account.js"></script>
 </body>
 
 </html>
