@@ -1,0 +1,92 @@
+body{
+    background-color: #1A559B;
+    font-family: "Sofia", sans-serif;
+}
+
+  
+  .sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+
+  #navbar{
+      margin-top: 300px;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  #img,#overlaysponsor{
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    margin-right: 300px;
+     
+  }
+
+  #overlaysponsor{
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    margin-right: 300px;  
+    display: none;
+    background-color:rgba(255, 255, 255, 0.425);
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid green;
+    padding: 200px 0;
+    font-size: 30px;
+  }
+  #btn{
+    position: absolute;
+    right: 0;
+    margin-right: 300px;
+    color: #000; 
+  }
+  
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    margin-top: 20px;
+  }
+  #name{
+      padding-top:100px;
+      background-color: #ffff;
+      width:1300px 
+      
+      
+  }
+  #aboutme{
+      background-color: #ffff;
+  }
+  @media screen and (max-height: 450px) {
+    .side
+    nav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+ 
