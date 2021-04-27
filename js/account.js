@@ -1,3 +1,4 @@
+//USER SELECTION FORM
 $(document).ready(function () {
     $("form#sform").hide();
     $("form#bform").hide();
@@ -10,15 +11,18 @@ $(document).ready(function () {
             $("form#sform").slideDown();
             $("p#user1").html(user).val();
             $("form#bform").hide();
+            $(".login2").hide();
         } else if (user == "Beneficiary") {
             $("#bform").slideDown();
             $(".user2").html(user).val();
             $("form#sform").hide();
+            $(".login").hide();
 
         } else {
             alert("Select to proceed");
             $("form#sform").hide();
             $("#bform").hide();
+           
 
         }
     })
@@ -27,7 +31,7 @@ $(document).ready(function () {
 
 
 
-
+//SPONSOR FORM
 $(document).ready(function () {
     $("form#sform").submit(function (event) {
         event.preventDefault();
@@ -77,23 +81,14 @@ $(document).ready(function () {
         
         
         }
-
-        
+        $("form#sform").hide();
+        $(".login").slideDown();
         return true;
-       
-
-
-
-       
-        // $("form#sform").hide();
-
-
-
-
+ 
     })
     
 })
-
+//LOGIN FORM
 $(document).ready(function () {
     $(".login").submit(function (event) {
         event.preventDefault();
@@ -106,5 +101,33 @@ $(document).ready(function () {
         if (l_password != password) {
             alert("Incorect password")
         }
+    })
+})
+//BENEFICIARY FORM
+$(document).ready(function(){
+    $(".login2").hide();
+    $("form#bform").submit(function(event){
+        event.preventDefault();
+        var bfname= $("#bfirstname").val();
+        var blname= $("#blastname").val();
+        var bphone = $("#bphone").val();
+        // var gender = $('input[name="gender"]:checked').val();
+        // var country = $("bcountry").val();
+
+        if(bfname.length<1){
+            alert("fill your name");
+            return false;
+        } 
+        if(blname.length<1){
+            alert("Fill your name");
+            return false;
+        }  
+        if(bphone.length>10 || bphone.length<10){
+            alert("incorect phone");
+            return false;
+        }
+        $("#bform").hide()
+        $(".login2").slideDown();
+        return true;
     })
 })
