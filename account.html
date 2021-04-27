@@ -126,32 +126,46 @@
                     </div>
                     <br>
                     <div class="form2">
-                        <form id="sform">
+                        <form id="sform" action="login.html" method="POST">
                             <h2>Sign up here</h2>
                             <label for="firstname">Firstname:</label>
-                            <input type="text" class="form-control" id="sfirstname" placeholder="firstname">
+                            <input type="text" class="form-control" id="sfirstname" placeholder="firstname" required>
                             <label for="lastname">Lastname:</label>
-                            <input type="text" class="form-control" id="slastname" placeholder="lastname">
+                            <input type="text" class="form-control" id="slastname" placeholder="lastname" required>
                             <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="email">
+                            <input type="email" class="form-control" id="email" placeholder="email" required>
                             <label for="phone">Phone:</label>
-                            <input type="number" class="form-control" id="sphone" placeholder="phone">
+                            <input type="number" class="form-control" id="sphone" placeholder="phone" required>
                             <p id="pp"></p>
                             <label for="password">Password:</label>
-                            <input type="password" class="form-control" id="password" placeholder="password">
+
+                            <input type="password" class="form-control" id="password" placeholder="password" required>
                             <label for="confpswd">Confirm Password:</label>
-                            <input type="password" class="form-control" id="confirm" placeholder="confirm password">
-
+                            <input type="password" class="form-control" id="confirm" placeholder="confirm password" required>
+                            <p id="pp1"></p>
                             <button class="btn bg-warning" type="submit">Register</button>
-
 
                         </form>
 
 
                     </div>
+                    <div class="form login">
+                        <div class="form-group">
+                            <label for="email">Enter your email:</label>
+                            <input type="email" class="form-control" id="email">
+        
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password">
+        
+                        </div>
+                        <button class="btn bg-danger">Login</button>
+                    </div>
 
                 </div>
             </div>
+            
             <div class="card footer bg-primary text-white d-flex justify-content-center align-items-center">
                 <p>Emphathy International &#169 </p>
 
