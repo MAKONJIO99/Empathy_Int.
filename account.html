@@ -40,10 +40,10 @@
                     <div class="form1">
                         <form id="bform">
                             <h2> Sign up here</h2>
-                            <input type="text" class="form-control" id="firstname" placeholder="firstname">
-                            <input type="text" class="form-control" id="lastname" placeholder="lastname">
-                            <input type="text" class="form-control" id="country" placeholder="country">
-                            <input type="number" class="form-control" id="phone" placeholder="Phone">
+                            <input type="text" class="form-control" id="bfirstname" placeholder="firstname">
+                            <input type="text" class="form-control" id="blastname" placeholder="lastname">
+
+                            <input type="number" class="form-control" id="bphone" placeholder="Phone">
                             <label class="form-control-label">Select gender</label>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" value="male" id="male" name="gender">
@@ -57,7 +57,7 @@
                                     Female
                                 </label>
                             </div>
-                            <select name="country" class="form-control" id="country">
+                            <select name="country" class="form-control" id="bcountry">
                                 <option value="0" label="Select a country -- " selected="selected">Select a country ...
                                 </option>
                                 <optgroup id="country-optgroup-Africa" label="Africa">
@@ -121,6 +121,7 @@
                                     <option value="ZW" label="Zimbabwe">Zimbabwe</option>
                                 </optgroup>
                             </select>
+                            <button type="submit" class="btn bg-warning">Register</button>
                         </form>
                     </div>
                     <br>
@@ -128,17 +129,19 @@
                         <form id="sform">
                             <h2>Sign up here</h2>
                             <label for="firstname">Firstname:</label>
-                            <input type="text" class="form-control" id="firstname" placeholder="firstname">
+                            <input type="text" class="form-control" id="sfirstname" placeholder="firstname">
                             <label for="lastname">Lastname:</label>
-                            <input type="text" class="form-control" id="lastname" placeholder="lastname">
+                            <input type="text" class="form-control" id="slastname" placeholder="lastname">
                             <label for="email">Email:</label>
                             <input type="email" class="form-control" id="email" placeholder="email">
                             <label for="phone">Phone:</label>
-                            <input type="number" class="form-control" id="phone" placeholder="phone">
+                            <input type="number" class="form-control" id="sphone" placeholder="phone">
+                            <p id="pp"></p>
                             <label for="password">Password:</label>
                             <input type="password" class="form-control" id="password" placeholder="password">
                             <label for="confpswd">Confirm Password:</label>
-                            <input type="password" class="form-control" id="confirm" placeholder="confpswd">
+                            <input type="password" class="form-control" id="confirm" placeholder="confirm password">
+
                             <button class="btn bg-warning" type="submit">Register</button>
 
 
