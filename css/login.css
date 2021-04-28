@@ -1,0 +1,21 @@
+@media only screen and (max-width:768px) {
+    body {
+        background-color: black;
+    }
+    /* .card{
+        width: 100%;
+        color:white;
+    }
+    .card>input{
+        width: 100vw;
+
+    } */
+
+
+}
+
+.loginpanel {
+    display: block;
+    width: 30vw;
+    background-color: rgb(194, 193, 190);
+}

@@ -81,8 +81,9 @@ $(document).ready(function () {
         
         
         }
-        $("form#sform").hide();
-        $(".login").slideDown();
+        // $("form#sform").hide();
+        // $(".login").slideDown();
+        window.location.href="login.html";
         return true;
  
     })
@@ -126,8 +127,9 @@ $(document).ready(function(){
             alert("incorect phone");
             return false;
         }
-        $("#bform").hide()
-        $(".login2").slideDown();
+        // $("#bform").hide()
+        // $(".login2").slideDown();
+        window.location.href="login.html";
         return true;
     })
 })
