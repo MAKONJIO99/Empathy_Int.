@@ -53,7 +53,7 @@ $(document).ready(function () {
             $("#sphone").css("border", "1px solid red");
             $("#sphone").focus();
             return false;
-        } else if (phone.length < 1) {
+        } else if (phone.length < 10 || phone.length>12) {
             $("#pp").text("This field is required")
             $("#pp").css("color", "red");
             $("#sphone").focus();
