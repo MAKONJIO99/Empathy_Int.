@@ -11,19 +11,25 @@ $(document).ready(function () {
             $("form#sform").fadeIn();
             $("p#user1").html(user).val();
             $("form#bform").fadeOut();
+            
             // $(".login2").hide();
         } else if (user == "Beneficiary") {
             $("#bform").fadeIn();
             $(".user2").html(user).val();
             $("form#sform").fadeOut();
+            return false;
             // $(".login").hide();
 
         } else {
             alert("Select to proceed");
             $("form#sform").hide();
             $("#bform").hide();
+            $(".victory>img").addClass("logo2");
+            return false;
+
         }
         $(".victory>img").addClass("logo");
+        return true;
     })
 })
 
