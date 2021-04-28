@@ -22,7 +22,7 @@ $(document).ready(function () {
             alert("Select to proceed");
             $("form#sform").hide();
             $("#bform").hide();
-           
+
 
         }
     })
@@ -39,8 +39,8 @@ $(document).ready(function () {
         localStorage.setItem("sfirstname", sfirstname)
         var slastname = $("#slastname").val();
         localStorage.setItem("slastname", slastname)
-        var email = $("#email").val();
-        localStorage.setItem("#email", email);
+        var email = $("#semail").val();
+        localStorage.setItem("email", email);
         var phone = $("#sphone").val();
         localStorage.setItem("sphone", phone);
         var password = $("#password").val();
@@ -59,7 +59,7 @@ $(document).ready(function () {
             $("#sphone").focus();
             return false;
         }
-        
+
         if (sfirstname.length < 1) {
             alert("This field is required")
             return false;
@@ -78,58 +78,74 @@ $(document).ready(function () {
             $("#confirm").css("border", "1px solid red");
             $("#pp1").css("color", "red");
             return false
-        
-        
+
+
         }
         // $("form#sform").hide();
         // $(".login").slideDown();
-        window.location.href="login.html";
+        window.location.href = "login.html";
         return true;
- 
-    })
-    
-})
-//LOGIN FORM
-$(document).ready(function () {
-    $(".login").submit(function (event) {
-        event.preventDefault();
-        var l_email = email;
-        var l_password = password;
 
-        if (l_email != email) {
-            alert("Incorect email");
-        }
-        if (l_password != password) {
-            alert("Incorect password")
-        }
     })
+    //LOGIN FORM
+    $(document).ready(function () {
+        $(".login").submit(function (event) {
+            event.preventDefault();
+            var l_email = $("#myemail").val();
+            localStorage.setItem("myemail", myemail);
+            var l_password = $("#mypassword").val();
+            localStorage.setItem("mypassword", password);
+
+            if (l_email != email) {
+                alert("Incorect email");
+                return false;
+            }
+            if (l_password != password) {
+                alert("Incorect password");
+                return false;
+            }
+            window.location.href = "profile.html";
+            return true;
+        })
+    })
+
 })
+
 //BENEFICIARY FORM
-$(document).ready(function(){
-    $(".login2").hide();
-    $("form#bform").submit(function(event){
-        event.preventDefault();
-        var bfname= $("#bfirstname").val();
-        var blname= $("#blastname").val();
-        var bphone = $("#bphone").val();
-        // var gender = $('input[name="gender"]:checked').val();
-        // var country = $("bcountry").val();
 
-        if(bfname.length<1){
+$(document).ready(function () {
+    $(".login2").hide();
+    $("form#bform").submit(function (event) {
+        event.preventDefault();
+        var bfname = $("#bfirstname").val();
+        localStorage.setItem("bfirstname",bfname);
+        var blname = $("#blastname").val();
+        localStorage.setItem("#blastname",blname);
+        var bphone = $("#bphone").val();
+        localStorage.setItem("#bphone", bphone);
+        var gender = $('input[name="gender"]:checked').val();
+        localStorage.setItem("gender", gender);
+        var country = $("#bcountry").val();
+        localStorage.setItem("country",country);
+
+        if (bfname.length < 1) {
             alert("fill your name");
             return false;
-        } 
-        if(blname.length<1){
+        }
+        if (blname.length < 1) {
             alert("Fill your name");
             return false;
-        }  
-        if(bphone.length>10 || bphone.length<10){
+        }
+        if (bphone.length > 10 || bphone.length < 10) {
             alert("incorect phone");
             return false;
         }
         // $("#bform").hide()
         // $(".login2").slideDown();
-        window.location.href="login.html";
+        window.location.href = "login.html";
         return true;
     })
 })
+
+// var storedvalue = localStorage.getItem("email");
+// console.log(storedvalue);
