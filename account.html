@@ -23,37 +23,54 @@
                 <h3>Account page</h3>
 
 
-                <a href="home.html"> <span class="fas fa-arrow-circle-left text-white">HOME</span></a>
-                <p>Welcome,</p>
-                <p>Kindly, tell us who you are;</p>
-                <form id="myform">
-                    <div class="form-check">
-                        <label for="sponsor">Sponsor</label>
-                        <input type="radio" class="form-check-input" name="person" id="sponsor1" value="Sponsor">
-                    </div>
-                    <div class="form-check">
-                        <label for="benef">Beneficiary</label>
-                        <input type="radio" class="form-check-input" name="person" id="sponsor2" value="Beneficiary">
-                    </div>
-                    <button type="submit" class="btn bg-light">Confirm</button>
+                <a href="home.html"> <span class="fas fa-arrow-circle-left text-white" style="font-size: 18px;">HOME</span></a>
+                <div class="welcome d-flex align-items-center justify-content-center flex-column ">
+                    <p>Welcome, </p>
+                    <img src="./images/joinus2.jpg" alt="joinus">
 
-                </form>
-                User is:<p id="user1" class="user2"></p>
+                </div>
+
+                <div class="chooseuser" style="font-size: 20px;">
+                    <p>Kindly, tell us who you are;</p>
+                    <form id="myform">
+                        <div class="form-check">
+                            <label for="sponsor">Sponsor</label>
+                            <input type="radio" class="form-check-input" name="person" id="sponsor1" value="Sponsor">
+                        </div>
+                        <div class="form-check">
+                            <label for="benef">Beneficiary</label>
+                            <input type="radio" class="form-check-input" name="person" id="sponsor2"
+                                value="Beneficiary">
+                        </div>
+                        <button type="submit" class="btn bg-light">Confirm</button>
+
+                    </form>
+                    <p> User is:<p id="user1" class="user2"></p>
+                    </p>
+                </div>
+
             </div>
-
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 d-flex align-items-center flex-column">
+
+                    <div class="victory">
+                        <img src="./images/Emphathy_logo.jpg" alt="" height="200px" width="200px" style="border-radius: 50%;">
+                    </div>
+                    
 
                     <!-- BENEFICIARY REGISTRATION FORM -->
 
                     <div class="form1">
                         <form id="bform" method="POST">
                             <h2> Sign up here</h2>
+                            <label for="bfirtsname">Firstname:</label>
                             <input type="text" class="form-control" id="bfirstname" placeholder="firstname" required>
+                            <label for="blastname">Lastname:</label>
                             <input type="text" class="form-control" id="blastname" placeholder="lastname" required>
+                            <label for="bphone">Phone:</label>
 
                             <input type="number" class="form-control" id="bphone" placeholder="Phone" required>
-                            <label class="form-control-label">Select gender</label>
+                            <label class="form-control-label">Select gender:</label>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" value="male" id="male" name="gender">
                                 <label class="form-check-label">
@@ -66,6 +83,7 @@
                                     Female
                                 </label>
                             </div>
+                            <label for="bcountry">Select your country:</label>
                             <select name="country" class="form-control" id="bcountry" required>
                                 <option value="0" label="Select a country -- " selected="selected">Select a country ...
                                 </option>
@@ -130,6 +148,7 @@
                                     <option value="ZW" label="Zimbabwe">Zimbabwe</option>
                                 </optgroup>
                             </select>
+                            <br>
                             <button type="submit" class="btn bg-warning">Register</button>
                         </form>
                     </div>
@@ -166,6 +185,35 @@
 
 
                 </div>
+                <div class="col-md-5">
+
+                    <div class="team">
+                        <h2>Our team</h2>
+                        <img src="./images/unity-people.jpg" alt="" height="300px" width="300px" style="border-radius: 10%;">
+                        <p style="font-size: 30px;">Where there is unity there is always victory.</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <div class="message card bg-secondary">
+
+
+
+                <div class="info d-flex justify-content-center align-items-center ">
+
+                    <div>
+                        <h3 style="text-decoration: underline;">Become our fellow</h3>
+                        <p>we believe the in unity to help our children</p>
+                        <p>let's secure our future </p>
+                    </div>
+                    <img src="./images/letsdonate.jpeg" alt="Lets Donate">
+
+
+                </div>
+
+
             </div>
 
             <div class="card footer bg-primary text-white d-flex justify-content-center align-items-center">
