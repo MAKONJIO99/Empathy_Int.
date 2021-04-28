@@ -1,7 +1,4 @@
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
+function validateForm() {
+  var name = document.getElementById("name").value;
+  alert( name + " we have received your message, your sponsored child will rspond soon");
+}

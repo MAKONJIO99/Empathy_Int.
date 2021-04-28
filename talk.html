@@ -18,34 +18,35 @@
                 <a href="profile.html">My Profile</a>
                 <a href="Childp.html">Child's Profile</a>
                 <a href="talk.html">Talk to child</a>
-                <a href="donate.html">My donations</a>
+                <a href="progress2.html">My donations</a>
             </div>
       </div>
 
       <div class="row">
              <div class="main">
-                <h3>Contact Form</h3>
-
+              <div class="feedback-area" id="feedback">
+                <h2>Send Us Your Feedback</h2>
                 <div class="container">
-                  <form action="">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                      <option value="australia">Australia</option>
-                      <option value="canada">Canada</option>
-                      <option value="usa">USA</option>
-                    </select>
-                
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                
-                    <input type="submit" value="Submit">
-                  </form>
+                  <form onsubmit=" return validateForm()" class="form">           
+                    <div class="row">
+                    <div class="col">
+                        <input type="text" class="mt-3 form-control" placeholder="Name" id="name" required>
+                    </div>
+                    <div class="col">
+                        <input type="email" class="mt-3 form-control col-form-label" placeholder="Email" id="email"
+                            required>
+                    </div>
+                    <div class="col-sm-12" id="text">
+                        <textarea type="text" class="mt-3 form-control" placeholder="Your message here..." id="message"
+                            rows="6" required></textarea>
+                    </div><br>
+                    <div>
+                        <button type="submit" class="btn btn-outline-info mt-3">Submit</button>   
+                    </div>
+                   </div>
+                 </form>
+                </div>
+              </div>
                 </div>
                 
             </div>
