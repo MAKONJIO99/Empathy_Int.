@@ -13,6 +13,26 @@
 	border-radius: 50%;
 }
 
+.what-we-do{
+    font-family: 'Quattrocento', serif;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Gabriela', serif;
+  }
+  .what-we-do .headings{
+    padding-bottom: 38px;
+  }
+
+  #product, #development, #design{
+    display: none;
+    font-family: 'Copse', serif;
+    font-size: 16px;
+  }
+  #product .title, #development .title, #design .title{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
 donate
 .donation-container {
 	height: 1000px;
