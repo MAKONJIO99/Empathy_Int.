@@ -22,9 +22,8 @@ $(document).ready(function () {
             alert("Select to proceed");
             $("form#sform").hide();
             $("#bform").hide();
-
-
         }
+        $(".victory>img").addClass("logo");
     })
 })
 
@@ -94,14 +93,21 @@ $(document).ready(function () {
             var l_email = $("#myemail").val();
             // localStorage.setItem("myemail", myemail);
             var l_password = $("#mypassword").val();
-            localStorage.setItem("mypassword", password);
+            localStorage.setItem("mypassword", l_password);
+
+            // if(l_email!=email){
+            //     alert("Incorect email");
+            // }
+            // if(l_password!=password){
+            //     alert("Incorect password");
+            // }
 
 
             if (l_email.length<8) {
                 alert("Incorect email");
                 return false;
             }
-            if (l_password.length<6) {
+            if (l_password.length<6 ) {
                 alert("Incorect password");
                 return false;
             }
