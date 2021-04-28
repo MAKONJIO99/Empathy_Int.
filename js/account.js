@@ -8,15 +8,15 @@ $(document).ready(function () {
 
         // alert("you selected" + user);
         if (user == "Sponsor") {
-            $("form#sform").slideDown();
+            $("form#sform").fadeIn();
             $("p#user1").html(user).val();
-            $("form#bform").hide();
-            $(".login2").hide();
+            $("form#bform").fadeOut();
+            // $(".login2").hide();
         } else if (user == "Beneficiary") {
-            $("#bform").slideDown();
+            $("#bform").fadeIn();
             $(".user2").html(user).val();
-            $("form#sform").hide();
-            $(".login").hide();
+            $("form#sform").fadeOut();
+            // $(".login").hide();
 
         } else {
             alert("Select to proceed");
