@@ -53,7 +53,7 @@ $(document).ready(function () {
             $("#sphone").css("border", "1px solid red");
             $("#sphone").focus();
             return false;
-        } else if (phone.length < 10 || phone.length>12) {
+        } else if (phone.length < 10 || phone.length > 12) {
             $("#pp").text("This field is required")
             $("#pp").css("color", "red");
             $("#sphone").focus();
@@ -92,15 +92,16 @@ $(document).ready(function () {
         $(".login").submit(function (event) {
             event.preventDefault();
             var l_email = $("#myemail").val();
-            localStorage.setItem("myemail", myemail);
+            // localStorage.setItem("myemail", myemail);
             var l_password = $("#mypassword").val();
             localStorage.setItem("mypassword", password);
 
-            if (l_email != email) {
+
+            if (l_email.length<8) {
                 alert("Incorect email");
                 return false;
             }
-            if (l_password != password) {
+            if (l_password.length<6) {
                 alert("Incorect password");
                 return false;
             }
@@ -118,15 +119,15 @@ $(document).ready(function () {
     $("form#bform").submit(function (event) {
         event.preventDefault();
         var bfname = $("#bfirstname").val();
-        localStorage.setItem("bfirstname",bfname);
+        localStorage.setItem("bfirstname", bfname);
         var blname = $("#blastname").val();
-        localStorage.setItem("#blastname",blname);
+        localStorage.setItem("#blastname", blname);
         var bphone = $("#bphone").val();
         localStorage.setItem("#bphone", bphone);
         var gender = $('input[name="gender"]:checked').val();
         localStorage.setItem("gender", gender);
         var country = $("#bcountry").val();
-        localStorage.setItem("country",country);
+        localStorage.setItem("country", country);
 
         if (bfname.length < 1) {
             alert("fill your name");
@@ -147,5 +148,7 @@ $(document).ready(function () {
     })
 })
 
-// var storedvalue = localStorage.getItem("email");
-// console.log(storedvalue);
+// $(document).ready(function () {
+//     var storedemail = localStorage.getItem("email")
+//     console.log(storedemail);
+// })

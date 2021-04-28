@@ -19,6 +19,6 @@
 
 .loginpanel {
     display: block;
-    width: 30vw;
+    /* width: 30vw; */
     background-color: rgb(194, 193, 190);
 }
