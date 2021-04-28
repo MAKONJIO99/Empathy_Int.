@@ -14,43 +14,53 @@
 </head>
 
 <body>
-    <div class="container bg-info">
+    <div class="container">
         <a href="account.html">
             <h2 class="fas fa-chevron-left text-white"> Back to Account</h2>
         </a>
-        <p>login page</p>
+        <p class="text">login page</p>
         <!-- LOGIN CODE  -->
-        <div class="loginpanel card card-body">
-            <div class="form login">
-                <form action="profile.html">
+        <div class=" row loginpanel d-flex align-items-center justify-content-center">
+            <div class="col-sm-5">
+                <div class="form login card card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Enter your email:</label>
+                            <input type="email" class="form-control" id="myemail" required>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="mypassword" required>
+
+                        </div>
+                        <br>
+                        <button class="btn bg-warning" style="font-weight: bolder;">Login</button>
+                    </form>
+                </div>
+                <!-- BENEFICIARY LOGIN FORM -->
+                <!-- <div class="form login2">
                     <div class="form-group">
                         <label for="email">Enter your email:</label>
-                        <input type="email" class="form-control" id="myemail" required>
+                        <input type="email" class="form-control" id="email" required>
 
                     </div>
                     <div class="form-group">
                         <label for="password">Password:</label>
-                        <input type="password" class="form-control" id="mypassword" required>
+                        <input type="password" class="form-control" id="password" required>
 
                     </div>
                     <button class="btn bg-danger">Login</button>
-                </form>
-            </div>
-            <!-- BENEFICIARY LOGIN FORM -->
-            <div class="form login2">
-                <div class="form-group">
-                    <label for="email">Enter your email:</label>
-                    <input type="email" class="form-control" id="email" required>
+                </div> -->
 
-                </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" class="form-control" id="password" required>
 
-                </div>
-                <button class="btn bg-danger">Login</button>
             </div>
 
+
+        </div>
+        <br>
+        <div class="card-footer text-white d-flex justify-content-center" style="border-top: 2px solid  white;" >
+            <p>Copyright &#169 Emphathy International</p>
         </div>
 
 

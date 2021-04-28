@@ -22,6 +22,7 @@
 }
 .info>img{
     border-radius: 50%;
+    border: 2px solid rgb(10, 87, 175);
 }
 .welcome>p{
     font-size: 40px;
@@ -32,10 +33,15 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
+   
 }
 #user1,.user2{
     text-decoration:3px solid orange underline;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
+}
+.logo{
+    height: 80px;
+    width: 80px;
 }
