@@ -13,6 +13,9 @@
 
 
 }
+.container{
+    background-color: #1A559B;
+}
 
 .loginpanel {
     display: block;

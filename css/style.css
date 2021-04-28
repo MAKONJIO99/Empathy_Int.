@@ -1,9 +1,19 @@
-body{
+.container{
     background-color: #1A559B;
 
 }
+.logo{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
+.col-md-3>img{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
 
-/*donate*/
+donate
 .donation-container {
 	height: 1000px;
 	font-family: 'Montserrat', sans-serif;
