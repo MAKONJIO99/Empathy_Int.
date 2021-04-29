@@ -224,3 +224,13 @@ $(document).ready(function () {
     })
 
 })
+
+//LOGIN FORM
+var person =localStorage.getItem('user',user);
+
+$(document).ready(function(){
+   if (person="sponsor") {
+       $("#person").append(person);
+   }
+
+})
