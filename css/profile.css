@@ -57,3 +57,19 @@ button:hover, a:hover {
     background-color: blue;
     color: white;
   }
+  .pchild{
+    background-color: #1A559B;
+  }
+  .donation{
+    background-color: #1A559B;
+
+  }
+  .pgrs{
+    background-color: #1A559B;
+  }
+  th,td{
+    color: white;
+  }
+  .dntn{
+    background-color: #1A559B;
+  }
