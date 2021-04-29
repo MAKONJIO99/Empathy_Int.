@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/Emphathy_logo.jpg">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/profile.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Empathy Int.</title>
 </head>
+
 <body>
     <div class="container" style="background-color: #1A559B; color: #FFFFFF;">
         <div id="navbar">
             <a class="active" href="home.html">Home</a>
             <a href="profile.html">My Profile</a>
             <a href="donate.html">Donate</a>
-            <a href="Childp.html">Child Profile</a>
-            <a href="talk.html">Talk to child</a>
-          </div>
-          
-          
+            <a href="Childp.html">Childp rofile</a>
+            <a href="progress.html">Childs progress</a>
+            <a href="talk.html">Send message to child</a>
+        </div>
 
-          <h2 style="text-align:center">My Profile</h2>
-            <div class="wrapper d-flex flex-column justify-content-center align-items-center text-white>
-                <div class="card">
-                    <img src="./images/leah-hetteberg-V297jRiZZSI-unsplash.jpg" height="600px" alt="John" style="width:100%; width:600px ">
-                    <h1>Jane Doe</h1>
-                    <p class="title">Doctor.</p>
-                    <p>United States of America</p>
-                    <div style="margin: 24px 0;">
-                      <a href="#"><i class="fa fa-dribbble"></i></a> 
-                      <a href="#"><i class="fa fa-twitter"></i></a>  
-                      <a href="#"><i class="fa fa-linkedin"></i></a>  
-                      <a href="#"><i class="fa fa-facebook"></i></a> 
-                    </div>
-                    <button id="btn" type="submit" class="btn btn-warning"><a href="donate.html">Donate &hearts;</a></button>
-                  </div>
+
+
+        <h2 style="text-align:center">My Profile</h2>
+        <div class="wrapper d-flex flex-column justify-content-center align-items-center">
+            <div class="card bg-secondary">
+                <img src="./images/leah-hetteberg-V297jRiZZSI-unsplash.jpg" height="300px" alt="John"
+                    style="width:100%; width:400px ">
+                <P>NAME: <span class="member" id="member"></span></P>
+                <p>Doctor.</p>
+                <p>COUNTRY: <span id="country"></span></p>
+                <p>PHONE: <span class="phone" id="phone"></span></p>
+                <p>EMAIL: <span class="as" id="as"></span></p>
+                <div style="margin: 24px 0;" class="d-flex justify-content-center">
+                    <a href="#"><span class="fa fa-dribbble"></span></a>
+                    <a href="#"><span class="fa fa-twitter"></span></a>
+                    <a href="#"><span class="fa fa-linkedin"></span></a>
+                    <a href="#"><span class="fa fa-facebook"></i></a>
+                </div>
+                <button id="btn" type="submit" class="btn btn-warning"><a href="donate.html">Donate
+                        &hearts;</a></button>
             </div>
-          
-          
+        </div>
+
+
     </div>
-            
-       
+
+
     </div>
-    
+
     <script src="./js/profile.js"></script>
+    <script src="/js/account.js"></script>
 </body>
+
 </html>

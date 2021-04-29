@@ -225,12 +225,23 @@ $(document).ready(function () {
 
 })
 
-//LOGIN FORM
-var person =localStorage.getItem('user',user);
+//PROFILE 
+var member = JSON.parse((localStorage.getItem('sponsor')));
+var person = JSON.parse((localStorage.getItem('beneficiary')));
+// var fellow = JSON.parse((localStorage.getItem('user')));
 
-$(document).ready(function(){
-   if (person="sponsor") {
-       $("#person").append(person);
-   }
+
+$(document).ready(function () {
+    $(".member").append(member.sfirstname);
+    $(".as").append(member.email);
+    $(".phone").append(member.phone);
+
+})
+
+$(document).ready(function () {
+    $("#member").append(person.bfname);
+    $("#country").append(person.country);
+    $("#as").append(person.bemail);
+    $("#phone").append(person.bphone);
 
 })
