@@ -20,11 +20,12 @@
             <h2 class="fas fa-chevron-left text-white"> Back to Account</h2>
         </a>
         <p class="text">login page</p>
+        <p id="person"></p>
         <!-- LOGIN CODE  -->
         <div class=" row loginpanel d-flex align-items-center justify-content-center">
             <div class="col-sm-5">
-                <div class="form login card card-body">
-                    <form>
+                <div class="form login card card-body" >
+                    <form id="sponsorlogin">
                         <div class="form-group">
                             <label for="email">Enter your email:</label>
                             <input type="email" class="form-control" id="myemail" required>
@@ -38,21 +39,22 @@
                         <br>
                         <button class="btn bg-warning" style="font-weight: bolder;">Login</button>
                     </form>
+                    <form id="benlogin">
+                        <div class="form-group">
+                            <label for="b-email">Enter your email:</label>
+                            <input type="email" class="form-control" id="b-email" required>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="b-password">Password:</label>
+                            <input type="password" class="form-control" id="b-password" required>
+
+                        </div>
+                        <br>
+                        <button class="btn bg-warning" style="font-weight: bolder;">Login</button>
+                    </form>
                 </div>
-                <!-- BENEFICIARY LOGIN FORM -->
-                <!-- <div class="form login2">
-                    <div class="form-group">
-                        <label for="email">Enter your email:</label>
-                        <input type="email" class="form-control" id="email" required>
-
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password:</label>
-                        <input type="password" class="form-control" id="password" required>
-
-                    </div>
-                    <button class="btn bg-danger">Login</button>
-                </div> -->
+               
 
 
             </div>
@@ -67,6 +69,7 @@
 
     </div>
     <script src="js/account.js"></script>
+    <!-- <script src="js/login.js"></script> -->
 </body>
 
 

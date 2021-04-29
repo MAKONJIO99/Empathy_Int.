@@ -32,3 +32,9 @@
 .fas:hover{
     text-decoration: underline;
 }
+#benlogin{
+    display: none;
+}
+/* #sponsorlogin{
+    display: none;
+} */
