@@ -29,3 +29,17 @@ $(document).ready(function(){
       $("#product-image").slideDown('1500');
     });
   });
+
+  //Home navigation
+$(document).ready(function(){
+  $(".login").mouseover(function(){
+    $(".userlogin").slideDown();
+    $(".userlogin").css("border-bottom","2px solid red");
+
+  })
+
+  $(".login").click(function(){
+    $(".userlogin>btn").css("border","2px solid red");
+  })
+
+})

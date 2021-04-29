@@ -32,6 +32,20 @@
     font-size: 20px;
     font-weight: 600;
   }
+.navigation>.btn:hover{
+	background-color: #8f8c8c;
+	
+
+
+}
+.userlogin{
+	display: none;
+}
+
+
+
+
+
 
 donate
 .donation-container {
