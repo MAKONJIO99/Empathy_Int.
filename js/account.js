@@ -11,7 +11,7 @@ $(document).ready(function () {
             $("form#sform").fadeIn();
             $("p#user1").html(user).val();
             $("form#bform").fadeOut();
-            
+
             // $(".login2").hide();
         } else if (user == "Beneficiary") {
             $("#bform").fadeIn();
@@ -41,17 +41,26 @@ $(document).ready(function () {
     $("form#sform").submit(function (event) {
         event.preventDefault();
         var sfirstname = $("#sfirstname").val();
-        localStorage.setItem("sfirstname", sfirstname)
+
         var slastname = $("#slastname").val();
-        localStorage.setItem("slastname", slastname)
+
         var email = $("#semail").val();
-        localStorage.setItem("email", email);
+
         var phone = $("#sphone").val();
-        localStorage.setItem("sphone", phone);
+
         var password = $("#password").val();
-        localStorage.setItem("password", password);
+
         var confirm = $("#confirm").val();
-        localStorage.setItem("confirm", confirm);
+
+
+        var user = {
+            sfirstname,
+            slastname,
+            email,
+            phone,
+            password,
+            confirm
+        };
 
         if (phone.length > 12) {
             // alert("Please enter correct phone number")
@@ -86,6 +95,8 @@ $(document).ready(function () {
 
 
         }
+        localStorage.setItem("user", JSON.stringify(user));
+
         // $("form#sform").hide();
         // $(".login").slideDown();
         window.location.href = "login.html";
@@ -97,26 +108,30 @@ $(document).ready(function () {
         $(".login").submit(function (event) {
             event.preventDefault();
             var l_email = $("#myemail").val();
-            // localStorage.setItem("myemail", myemail);
+            
             var l_password = $("#mypassword").val();
-            localStorage.setItem("mypassword", l_password);
 
-            // if(l_email!=email){
-            //     alert("Incorect email");
-            // }
-            // if(l_password!=password){
-            //     alert("Incorect password");
-            // }
+            var userinfo=JSON.parse((localStorage.getItem("user")))
+            
 
-
-            if (l_email.length<8) {
+            if(l_email!=userinfo.email) {
                 alert("Incorect email");
                 return false;
             }
-            if (l_password.length<6 ) {
+            if(l_password!=userinfo.password){
                 alert("Incorect password");
                 return false;
             }
+
+
+            // if (l_email.length < 8) {
+            //     alert("Incorect email");
+            //     return false;
+            // }
+            // if (l_password.length < 6) {
+            //     alert("Incorect password");
+            //     return false;
+            // }
             window.location.href = "profile.html";
             return true;
         })
