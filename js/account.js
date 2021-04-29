@@ -102,7 +102,7 @@ $(document).ready(function () {
 
         // $("form#sform").hide();
         // $(".login").slideDown();
-        window.location.href = "login.html";
+        window.location.href = "slogin.html";
         return true;
 
     })
@@ -194,31 +194,33 @@ $(document).ready(function () {
         // $("#bform").hide()
         // $(".login2").slideDown();
         localStorage.setItem("beneficiary", JSON.stringify(beneficiary));
-        window.location.href = "login.html";
+        window.location.href = "blogin.html";
         return true;
     })
-    // $(document).ready(function () {
-    //     $(".login").submit(function (event) {
-    //         event.preventDefault();
-    //         var lbemail = $("#myemail").val();
+    $(document).ready(function () {
+        $("#benlogin").submit(function (event) {
+            event.preventDefault();
+            var lbemail = $("#b-email").val();
 
-    //         var lbpassword = $("#mypassword").val();
+            var lbpassword = $("#b-password").val();
 
-    //         var userinfo = JSON.parse((localStorage.getItem('beneficiary')));
-
-
-    //         if (lbemail != userinfo.bemail) {
-    //             alert("Incorect email");
-    //             return false;
-    //         }
-    //         if (lbpassword != userinfo.bpassword) {
-    //             alert("Incorect password");
-    //             return false;
-    //         }
+            var mydata = JSON.parse((localStorage.getItem('beneficiary')));
 
 
-    //         window.location.href = "profile.html";
-    //         return true;
-    //     })
-    // })
+            if (lbemail != mydata.bemail) {
+                alert("Incorect email");
+                return false;
+            }
+            if (lbpassword != mydata.bpassword) {
+                alert("Incorect password");
+                return false;
+            }
+
+
+            window.location.href = "profile.html";
+            return true;
+        })
+
+    })
+
 })
