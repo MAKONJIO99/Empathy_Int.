@@ -230,7 +230,7 @@ var member = JSON.parse((localStorage.getItem('sponsor')));
 var person = JSON.parse((localStorage.getItem('beneficiary')));
 // var fellow = JSON.parse((localStorage.getItem('user')));
 
-
+//SPONSOR DATA RETRIEVAL
 $(document).ready(function () {
     $(".member").append(member.sfirstname);
     $(".as").append(member.email);
@@ -238,6 +238,7 @@ $(document).ready(function () {
 
 })
 
+//BENEFICIARY DATA RETRIEVAL
 $(document).ready(function () {
     $("#member").append(person.bfname);
     $("#country").append(person.country);
